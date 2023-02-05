@@ -78,5 +78,6 @@ group :test do
   gem 'factory_bot_rails'
   gem 'selenium-webdriver'
   gem 'simplecov', require: false
+  gem 'simplecov-cobertura'
   gem 'webdrivers'
 end
