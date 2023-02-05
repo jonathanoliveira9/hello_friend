@@ -39,7 +39,7 @@ jobs:
         run: bin/rails db:schema:load
       # Add or replace test runners here
       - name: Run tests
-        run: rspec
+        run: bundle exec rspec
 
       - name: Code Coverage Report
         uses: irongut/CodeCoverageSummary@v1.3.0
