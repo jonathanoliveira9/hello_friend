@@ -25,7 +25,7 @@ jobs:
           PORT: 5432
     env:
       RAILS_ENV: test
-      DATABASE_URL: "postgres://rails:password@localhost:5432/rails_test"
+      DATABASE_URL: "postgres://rails:password@localhost:5432/hello_friend_test"
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
