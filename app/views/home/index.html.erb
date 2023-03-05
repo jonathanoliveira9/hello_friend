@@ -1,0 +1,9 @@
+<%= link_to 'HELLO FRIEND', root_path, class: 'navbar-brand' %>
+
+<% if user_signed_in? %>
+<%= link_to 'Edit Perfil', edit_user_registration_path, class: 'mm-cl-white' %>
+<%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'mm-cl-white' %>
+<% else %>
+<%= link_to t('.sign_up'), new_user_registration_path, class: 'mm-cl-white' %>
+<%= link_to t('.sign_in'), new_user_session_path, class: 'mm-cl-white' %>
+<% end %>
